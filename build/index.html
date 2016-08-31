@@ -9,50 +9,7 @@
     </head>
     <body>
       <script src="//cdn.jsdelivr.net/phaser/2.6.1/phaser.js"></script>
-      <script type="text/javascript">
-      
-var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
-
-function preload() {
-  game.load.image('star', 'assets/star.png');
-  game.load.image('photo', 'assets/photo.jpg');
-}
-
-function create() {
-  
-  game.add.sprite(100, 100, 'star');
-  
-  var frame1 = [
-	'.5555555555555..',
-	'.5585558555855..',
-	'.5588088808855..',
-	'.5588288828855..',
-	'.5583888883855..',
-	'.5588888888855..',
-	'.5580888880855..',
-	'.5580000000855..',
-	'.5588888888855..',
-	'.5558888888555..',
-	'.33333333333333.',
-	'.33333333333333.',
-	'.333.333333.333.',
-	'.333.333333.333.',
-	'.333.333333.333.',
-	'.333.333333.333.'
-];
-  game.create.texture('owen', frame1, 7, 7, 0);
-  
-  game.add.sprite(200,200,'owen');
-  var p = game.add.sprite(200,200,'photo');
-  
-  p.scale.x = 0.5;
-  p.scale.y = 0.5;
-}
-
-function update()
-{
-}
-      </script>
+      <script src="game.js"></script>
       <script type='text/javascript' id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.11.0.js'><\/script>".replace("HOST", location.hostname));
 //]]></script>
